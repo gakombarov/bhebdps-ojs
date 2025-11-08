@@ -65,7 +65,7 @@ describe("About Functions (about_functions.js)", function() {
       return secondArg;
     }
 
-    expect(returnSecondArg("only give first arg")).toBe('undefined');
+    expect(returnSecondArg("only give first arg")).toBe(undefined);
 
     function returnAllArgs() {
       let argsArray = [];
@@ -89,10 +89,10 @@ describe("About Functions (about_functions.js)", function() {
     };
 
     let praiseSinger = { givePraise: appendRules };
-    expect(praiseSinger.givePraise("John")).toBe(FILL_ME_IN);
+    expect(praiseSinger.givePraise("John")).toBe('John rules!');
 
     praiseSinger.givePraise = appendDoubleRules;
-    expect(praiseSinger.givePraise("Mary")).toBe(FILL_ME_IN);
+    expect(praiseSinger.givePraise("Mary")).toBe("Mary totally rules!");
 
   });
 });
