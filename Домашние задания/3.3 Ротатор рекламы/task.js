@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const color = activeCase.dataset.color;
             const speed = parseInt(activeCase.dataset.speed, 10);
 
-            activateCase.color = color;
+            activeCase.style.color = color;
 
             if (rotator.timer) {
                 clearTimeout(rotator.timer);
